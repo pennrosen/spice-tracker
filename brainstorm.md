@@ -13,7 +13,7 @@
 ## VIEW CABINET
 three categories:
 - FRESH
-- IFFY
+- IFFY (75% expired?)
 - EXPIRED
 
 order by date (new to old)
