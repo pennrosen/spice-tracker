@@ -1,0 +1,61 @@
+{
+    "spices": [
+      {
+        "id": 1,
+        "name": "Oregano",
+        "url": "https://www.thespicehouse.com/greek-oregano-regular",
+        "dateAdded": "2019-03-23T18:25:43.511Z",
+        "shelfLife": 90
+      },
+      {
+        "id": 2,
+        "name": "Turmeric",
+        "url": "https://www.thespicehouse.com/turmeric",
+        "dateAdded": "2019-03-23T18:25:43.511Z",
+        "shelfLife": 90
+      },
+      {
+        "id": 3,
+        "name": "Cayenne",
+        "url": "https://www.thespicehouse.com/cayenne-pepper-regular",
+        "dateAdded": "2019-03-23T18:25:43.511Z",
+        "shelfLife": 240
+      },
+      {
+        "id": 4,
+        "name": "Paprika",
+        "url": "https://www.thespicehouse.com/hungarian-paprika-sweet",
+        "dateAdded": "2019-03-23T18:25:43.511Z",
+        "shelfLife": 240
+      },
+      {
+        "id": 5,
+        "name": "Cinnamon",
+        "url": "https://www.thespicehouse.com/vietnamese-saigon-cassia-cinnamon-whole",
+        "dateAdded": "2019-03-23T18:25:43.511Z",
+        "shelfLife": 720
+      },
+      {
+        "id": 6,
+        "name": "Tellicherry Peppercorns",
+        "url": "https://www.thespicehouse.com/peppercorn-black-tellicherry",
+        "dateAdded": "2019-03-23T18:25:43.511Z",
+        "shelfLife": 720
+      },
+      {
+        "id": 7,
+        "name": "Star Anise",
+        "url": "https://www.thespicehouse.com/star-anise-broken-pieces",
+        "dateAdded": "2019-03-23T18:25:43.511Z",
+        "shelfLife": 1800
+      },
+      {
+        "id": 8,
+        "name": "Nutmeg",
+        "url": "https://www.thespicehouse.com/nutmeg-whole",
+        "dateAdded": "2019-03-23T18:25:43.511Z",
+        "shelfLife": 1800
+      }
+    ]
+  }
+  

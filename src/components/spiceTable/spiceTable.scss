@@ -1,0 +1,18 @@
+.spiceTable {
+    background-color: #f2f2f2;
+    width: 90%;
+
+    thead {
+        background-color: #eee;
+        th { padding: 1em; }
+    }
+
+    tbody {
+        
+        td { padding-bottom: 1em; }
+
+        tr:first-of-type td { padding-top: 0.75em; }
+
+    }
+
+}
