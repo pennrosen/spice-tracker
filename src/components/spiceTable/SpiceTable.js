@@ -1,24 +1,25 @@
 import React from "react"
-import Moment from 'react-moment';
+import Moment from 'react-moment'
+import moment from 'moment'
 
 function SpiceTable(props) {
 
+    let style = { backgroundColor: "#fff" } // default styling 
+
     let spices = props.spices.map(spice => {
-        
-        let style = { backgroundColor: "#fff" } 
-        // switch (freshness) {
-        //     case fresh:
-        //         style = { backgroundColor: "#b8e0cd" }
-        //         break;
-        //     case iffy:
-        //         style = { backgroundColor: "#fbe7b5" }
-        //         break;
-        //     case fresh:
-        //         style = { backgroundColor: "#f3c7c4" }
-        //         break;
-        //     default:
-        //         style = { backgroundColor: "#fff" };
-        // }
+
+        let today = moment()
+        let dateAdded = moment(spice.dateAdded)
+        var numDaysSinceAddition = today.diff(dateAdded, 'd') 
+        let freshnessPercentage = (spice.shelfLife - numDaysSinceAddition) / spice.shelfLife * 100
+
+        if (freshnessPercentage <= 0 ) {
+            style = { backgroundColor: "#f3c7c4" } // expired
+        } else if (freshnessPercentage < 25) {
+            style = { backgroundColor: "#fbe7b5" } // "iffy"
+        } else {
+            style = { backgroundColor: "#b8e0cd" } // fresh! 
+        }
 
         return (
             <tr 
@@ -30,10 +31,7 @@ function SpiceTable(props) {
                     <a href={spice.url}>{spice.name}</a>
                 </td>
                 <td className="expiration">
-                    <Moment
-                        fromNow
-                        add={{ days: spice.shelfLife }}
-                    >
+                    <Moment add={{ days: spice.shelfLife }} fromNow>
                         {spice.dateAdded}
                     </Moment>
                 </td>

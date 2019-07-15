@@ -9,7 +9,12 @@
 
     tbody {
         
-        td { padding-bottom: 1em; }
+        td { 
+            border: 1px solid black;
+            border-left: 0;
+            border-right: 0;
+            padding: 1em 0;
+        }
 
         tr:first-of-type td { padding-top: 0.75em; }
 
