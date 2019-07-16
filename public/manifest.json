@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Spice Tracker",
+  "name": "Track your spice cabinet with React",
   "icons": [
     {
       "src": "favicon.ico",

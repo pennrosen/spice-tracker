@@ -10,7 +10,7 @@ function SpiceTable(props) {
 
         let today = moment()
         let dateAdded = moment(spice.dateAdded)
-        var numDaysSinceAddition = today.diff(dateAdded, 'd') 
+        let numDaysSinceAddition = today.diff(dateAdded, 'd') 
         let freshnessPercentage = (spice.shelfLife - numDaysSinceAddition) / spice.shelfLife * 100
 
         if (freshnessPercentage <= 0 ) {
